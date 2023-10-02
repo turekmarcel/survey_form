@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ankieta | Gerlach</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="left-column">
+                <img src="images/logo_b.png" alt="logo" class="logo">
+            </div>
+            <div class="right-column">
+                <form style="margin: 0 auto;" class="survey-form" method="post" action="">
+                    <!-- STEP-ONE -->
+                    <div class="step-content current" data-step="1">
+                        <div class="survey-text" style="text-align: justify;">
+                            <p class="input-label">
+                                Zapraszamy do wzięcia udziału w naszej krótkiej ankiecie dotyczącej nowych kolorów
+                                sztućców
+                                w naszym sklepie internetowym! Twoja opinia jest dla nas niezwykle cenna i pomoże nam
+                                dostosować naszą ofertę do Twoich preferencji.
+                            </p>
+                            <br>
+                            <p class="input-label">
+                                W ostatnim czasie rozważamy wprowadzenie nowych kolorów sztućców, które urozmaicią Twoje
+                                przyjęcia i codzienne posiłki. Chcielibyśmy dowiedzieć się, które z tych kolorów są dla
+                                Ciebie najbardziej atrakcyjne, dlatego prosimy o chwilę Twojego czasu, aby odpowiedzieć
+                                na
+                                kilka pytań.
+                            </p>
+                            <br>
+                            <p class="input-label">
+                                Twoja opinia pomoże nam określić, które kolory sztućców powinniśmy dodać do naszej
+                                oferty.
+                                Dzięki temu będziesz mógł/mogła jeszcze lepiej dopasować swoje naczynia i sztućce do
+                                swojego
+                                stylu życia i gustu.
+                            </p>
+                            <br>
+                            <p class="input-label">
+                                Ankieta jest krótka i zajmie tylko kilka minut. Dziękujemy za udział w badaniu i za
+                                wsparcie
+                                naszego sklepu internetowego!</p>
+                            <br>
+                            <div class="button-section">
+                                <a href="#" class="btn" id="btnCheck" data-set-step="2">Dalej</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STEP-TWO -->
+                    <div class="step-content form-width " data-step="2">
+                        <div class="fields">
+                            <div class="gender-section">
+                                <p class="input-label">Płeć</p>
+                                <input type="radio" id="genderChoice1" name="gender" value="Kobieta" />
+                                <label class="gender" for="contactChoice1">Kobieta</label>
+                                <br>
+                                <input type="radio" id="genderChoice2" name="gender" value="Mężczyzna" />
+                                <label class="gender" for="contactChoice2">Mężczyzna</label>
+                            </div>
+                            <div class="age">
+                                <p class="input-label">Wiek</p>
+                                <input class="form-input" type="number" min="1" max="120"
+                                    placeholder="Podaj swój wiek" />
+                            </div>
+                            <div class="education">
+                                <p class="input-label">Wykształcenie</p>
+                                <select name="education" id="education">
+                                    <option value="null"> </option>
+                                    <option value="podstawowe">Podstawowe</option>
+                                    <option value="zawodowe">Zawodowe</option>
+                                    <option value="srednie">Średnie</option>
+                                    <option value="wyzsze">Wyższe</option>
+                                </select>
+                            </div>
+                            <div class="salary">
+                                <p class="input-label">Wynagrodzenie</p>
+                                <select name="salary" id="salary">
+                                    <option value="null"> </option>
+                                    <option value="ponizej">Poniżej</option>
+                                    <option value="2k-4k">2tyś - 4tyś</option>
+                                    <option value="4k-6k">4tyś - 6tyś</option>
+                                    <option value="6k-8k">6tyś - 8tyś</option>
+                                    <option value="8k-10k">8tyś - 10tyś</option>
+                                    <option value="powyzej">Powyżej</option>
+                                </select>
+                            </div>
+                            <div class="button-section">
+                                <a href="#" class="back" data-set-step="1">Wstecz</a>
+                                <a href="#" class="btn" id="btnCheck" data-set-step="3">Dalej</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- STEP-THREE -->
+                    <div class="step-content" data-step="3">
+                        <div class="fields-img">
+                            <h2>Linia wzorów <b>NATUR</b></h2>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="pickImage1" />
+                                    <label for="pickImage1" data-number="1"><img src="images/natur/1N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage2" />
+                                    <label for="pickImage2" data-number="2"><img src="images/natur/2N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage3" />
+                                    <label for="pickImage3" data-number="3"><img src="images/natur/3N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage4" />
+                                    <label for="pickImage4" data-number="4"><img src="images/natur/4N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage5" />
+                                    <label for="pickImage5" data-number="5"><img src="images/natur/5N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage6" />
+                                    <label for="pickImage6" data-number="6"><img src="images/natur/6N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage7" />
+                                    <label for="pickImage7" data-number="7"><img src="images/natur/7N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage8" />
+                                    <label for="pickImage8" data-number="8"><img src="images/natur/8N.png" /></label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="pickImage9" />
+                                    <label for="pickImage9" data-number="9"><img src="images/natur/9N.png" /></label>
+                                </li>
+                            </ul>
+                            <div class="button-section">
+                                <a href="#" class="back" data-set-step="2">Wstecz</a>
+                                <a href="#" class="btn" id="btnCheck" data-set-step="4">Dalej</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
